@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark: #292c35;
+  --light: #f1f1f1;
+  --label: #111;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light);
+  width: 100%;
+  height: 100vh;
+  transition: background 0.5s;
+}
+
+.button {
+  position: relative;
+  width: 235.38px;
+  height: 102px;
+  border-radius: 50px;
+  box-shadow: 0 0 2.5px 0 #111;
+  cursor: pointer;
+  background-color: #111;
+}
+
+.circle {
+  position: absolute;
+  top: 8px;
+  left: 9px;
+  width: 84.31px;
+  height: 84.31%;
+  border-radius: 50%;
+  background-color: var(--light);
+  z-index: 2;
+  transition: left 0.5s;
+}
+
+.circle-move {
+  left: calc(64% - 9px);
+}
+
+.dark {
+  background-color: #292c35;
+}
+
+img, .moon {
+  position: relative;
+  z-index: 1;
+  width: 94.15px;
+  height: 94.15px;
+  top: 5px;
+  left: 3px;
+}
+
+img, .sun {
+  position: relative;
+  z-index: 1;
+  width: 94.15px;
+  height: 94.15px;
+  top: 4px;
+  left: 39px;
+}
